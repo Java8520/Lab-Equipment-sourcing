@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="461.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.equipment.sourcing.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" minHeight="16" minWidth="69" prefHeight="462.0" prefWidth="447.0" textFill="#df1f55" wrapText="true">
+         <effect>
+            <Shadow />
+         </effect></Label>
+      <Text layoutX="48.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="-29.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CQU LABORATORY" textAlignment="CENTER" wrappingWidth="240.53680419921875">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="1.0" radius="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#4adb37" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="48.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="98.93677520751953">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username_fx" layoutX="153.0" layoutY="148.0" prefHeight="26.0" prefWidth="192.0" />
+      <Line endX="356.0" endY="-7.62939453125E-6" layoutX="101.0" layoutY="95.0" startX="-100.0" stroke="#15462b" />
+      <Button fx:id="login_fx" layoutX="181.0" layoutY="276.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #19daa9;" text="Login" textFill="#242322" />
+      <Hyperlink fx:id="loginasadmin_fx" layoutX="14.0" layoutY="374.0" prefHeight="23.0" prefWidth="178.0" text="Login as Administrator" />
+      <Hyperlink fx:id="forgetpassword_fx" layoutX="14.0" layoutY="408.0" prefHeight="23.0" prefWidth="127.0" text="Forget password ?" />
+      <Line endX="346.20001220703125" layoutX="101.0" layoutY="362.0" startX="-100.0" stroke="#15462b" />
+      <ImageView fitHeight="76.0" fitWidth="157.0" layoutX="278.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="76.0" fitWidth="146.0" layoutX="284.0" layoutY="9.0">
+         <image>
+            <Image url="@../../../../../../../../../Pictures/1200px-CQUniversity_Australia_logo.svg.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password_fx" layoutX="153.0" layoutY="206.0" prefHeight="26.0" prefWidth="192.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="257.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="76.0" fitWidth="146.0" layoutX="298.0" layoutY="9.0">
+         <image>
+            <Image url="@../../../../../Pictures/1200px-CQUniversity_Australia_logo.svg.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
